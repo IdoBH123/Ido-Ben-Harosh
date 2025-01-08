@@ -11,6 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        @media (max-width: 576px) {
+            .custom-margin-top {
+                margin-top: 30%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -77,9 +84,10 @@
         <!-- SECTION: Hero Section -->
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6 mt-5">
+                <div class="col-10 col-sm-8 col-lg-6 custom-margin-top">
                     <img src="./images/bg.jpeg" class="d-block mx-lg-auto img-fluid" alt="Electrical Engineering" width="400" height="300" loading="lazy">
                 </div>
+
                 <div class="col-lg-6">
                     <h1 class="display-5 text-body-emphasis lh-1 mb-3" style="white-space: nowrap;">
                         Electrical Engineering,</br>
@@ -88,7 +96,7 @@
                     <p class="lead">I'm a 4th-year Electrical Engineering student specializing in <span class="bg-highlighted">Hardware and Software</span>, with a strong passion for teamwork, problem-solving, and cutting-edge projects. Motivated to drive impactful innovations
                         in the field of technology.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 explore-button">Explore Projects</button>
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 explore-button" id="#projects">Explore Projects</button>
                         <button type="button" class="btn btn-secondary btn-lg px-4 contact-button" onclick="window.open('https://wa.me/+972527532354', '_blank')">
                         Contact Me
                     </button>

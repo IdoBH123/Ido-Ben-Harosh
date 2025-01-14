@@ -18,6 +18,31 @@
                 margin-top: 30%;
             }
         }
+
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chat-icon img {
+  width: 50%;
+  height: 50%;
+}
+
+.chat-icon:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
     </style>
 </head>
 
@@ -100,13 +125,19 @@
                         <button type="button" class="btn btn-secondary btn-lg px-4 contact-button" onclick="window.open('https://wa.me/+972527532354', '_blank')">
                         Contact Me
                     </button>
-
+                 
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <div class="chat-icon">
+        <img 
+            src="data:image/png;base64,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" 
+            alt="Chat Icon"
+            onclick="redirectToWhatsApp()" 
+        >
+    </div>
 
     <section>
         <!-- SECTION: About Me -->
@@ -220,6 +251,7 @@
             </div>
         </div>
     </section>
+    
 
     <section id="projects">
         <!--Projects-->
@@ -745,7 +777,13 @@
                 }
             });
         });
-    </script>
+        function redirectToWhatsApp() {
+        window.location.href = "https://wa.me/+972527532354";
+    }
+    
+</script>
+
+
 </body>
 
 </html>

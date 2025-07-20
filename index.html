@@ -660,8 +660,7 @@
                 </div>
 
 
-
-                <!-- Card 2: Statistical Analysis System -->
+<!-- Card 2: Statistical Analysis System -->
 <div class="col">
   <div class="card shadow-sm">
     <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
@@ -676,23 +675,24 @@
 
       <!-- Carousel Inner -->
       <div class="carousel-inner" style="background-color: #f8f9fa; height: 350px;">
-        <!-- Image Slide -->
+        
+        <!-- Video Slide (First) -->
         <div class="carousel-item active">
-          <img src="./images/vhdl.jpg" class="d-block w-100 h-100" style="object-fit: contain;" alt="VHDL Diagram">
-        </div>
-
-        <!-- Video Slide -->
-        <div class="carousel-item">
           <div class="ratio ratio-16x9">
-            <video class="w-100 h-100" muted controls playsinline>
+            <video class="w-100 h-100" muted autoplay loop playsinline>
               <source src="images/Demonstration.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
+
+        <!-- Image Slide (Second) -->
+        <div class="carousel-item">
+          <img src="./images/vhdl.jpg" class="d-block w-100 h-100" style="object-fit: contain;" alt="VHDL Diagram">
+        </div>
       </div>
 
-      <!-- Custom Arrow Controls -->
+      <!-- Carousel Controls -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"
           style="filter: invert(1); background-color: rgba(0,0,0,0.5); border-radius: 50%;"></span>
@@ -713,7 +713,7 @@
         average, and median values while also detecting parity errors. Designed for synthesis on ASIC.
       </p>
 
-      <!-- Centered GitHub button -->
+      <!-- Centered GitHub Button -->
       <div class="d-flex justify-content-center">
         <button type="button" class="btn btn-sm btn-primary"
           onclick="window.open('https://github.com/IdoBH123/VHDL-Main-Controller', '_blank')">

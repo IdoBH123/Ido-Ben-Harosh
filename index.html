@@ -662,36 +662,43 @@
 
 
                 <!-- Card 2: Statistical Analysis System -->
-                <div class="col">
+<div class="col">
   <div class="card shadow-sm">
     <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+      
+      <!-- Indicators -->
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
           class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
           aria-label="Slide 2"></button>
       </div>
-      <div class="carousel-inner">
+
+      <!-- Carousel Inner -->
+      <div class="carousel-inner" style="background-color: #f8f9fa; height: 350px;">
         <div class="carousel-item active">
-          <img src="./images/vhdl.jpg" class="d-block w-100" alt="VHDL Diagram">
+          <img src="./images/vhdl.jpg" class="d-block w-100 h-100" style="object-fit: contain;" alt="VHDL Diagram">
         </div>
         <div class="carousel-item">
-          <video class="d-block w-100" controls autoplay loop muted playsinline>
+          <video class="d-block w-100 h-100" style="object-fit: contain;" muted playsinline controls>
             <source src="images/Demonstration.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
       </div>
+
+      <!-- Custom Arrow Controls with black background -->
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1); background-color: rgba(0,0,0,0.5); border-radius: 50%;"></span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1); background-color: rgba(0,0,0,0.5); border-radius: 50%;"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 
+    <!-- Card Body -->
     <div class="card-body">
       <h5 class="card-title text-center">Statistical Analysis System</h5>
       <p class="card-text">
@@ -709,6 +716,7 @@
     </div>
   </div>
 </div>
+
 
 
                 <!-- Card 1: Temperature Control -->

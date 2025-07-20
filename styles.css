@@ -1,200 +1,161 @@
-/* === Base Typography & Layout === */
 body {
-  font-family: 'Exo 2', sans-serif;
-  font-weight: 400;
-  background-color: #fff;
-  color: #101B1E;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
 }
 
-.catchphrase,
+.catchphrase {
+    color: #68BBCD;
+}
+
 .bg-highlighted {
-  color: #68BBCD;
-  background-color: #68BBCD;
+    background-color: #68BBCD;
 }
 
-/* === Buttons === */
 .btn-primary {
-  background-color: #68BBCD;
-  border-color: #68BBCD;
-  color: #101B1E;
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
+    background-color: #68BBCD;
+    border-color: #68BBCD;
+    color: #101B1E;
+    border-radius: 50px;
 }
 
 .btn-primary:hover {
-  background-color: #7CE0F5;
-  border-color: #7CE0F5;
-  color: #101B1E;
+    background-color: #7CE0F5;
+    border-color: #7CE0F5;
+    color: #101B1E;
 }
 
-/* === Navbar & Footer === */
-.navbar,
-.bg-body-tertiary,
-.footer-jumbotron,
+.text-bg-dark {
+    background-color: #101B1E;
+    color: #68BBCD;
+}
+
 .about-me {
-  background-color: #101B1E !important;
-  color: white;
+    background-color: #101B1E;
+}
+
+.bg-body-tertiary {
+    background-color: #101B1E !important;
+    color: white;
+}
+
+.skill {
+    background-color: #222F33;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    /* Padding around each skill block */
+    border-radius: 50px;
+    /* Optional: Rounded corners */
+    height: auto;
+    /* Adjusts height to content */
+    width: auto;
+    /* Adapts width to content */
+}
+
+.skill img {
+    margin-right: 10px;
+    /* Space between the image and the text */
+}
+
+.text-container h3 {
+    white-space: nowrap;
+    /* Prevents wrapping of text */
+    font-size: 1rem;
+    margin: 0;
+    /* Removes default margin */
+}
+
+.card img {
+    height: 200px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Maintain aspect ratio while covering the area */
+}
+
+.card {
+    height: 100%;
+    /* Ensure cards have consistent height */
+}
+
+.carousel-inner {
+    height: 200px;
+    /* Match the image height for consistency */
+}
+
+#talk-to-me {
+    background-color: #F4F4F4;
+}
+
+.carousel-inner img {
+    height: 200px;
+    /* Set a fixed height */
+    object-fit: contain;
+    /* Maintain aspect ratio while covering the area */
+}
+
+.skill img {
+    width: 30px;
+    height: 30px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.footer-jumbotron {
+    background-color: #101B1E;
 }
 
 .footer a,
 .footer p {
-  color: white !important;
-  text-decoration: none;
+    color: white !important;
+    text-decoration: none;
 }
 
-/* === Skills Section === */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: flex-start;
+.navbar {
+    background: #101B1E !important;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
-.skill {
-  background-color: #222F33;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 10px;
-  border-radius: 50px;
-  width: auto;
-  height: auto;
-}
-
-.skill img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
-}
-
-.text-container h3 {
-  white-space: nowrap;
-  font-size: 1rem;
-  margin: 0;
-}
-
-/* === Card Styling === */
-.card {
-  height: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-}
-
-.card img {
-  height: 200px;
-  object-fit: cover;
-}
-
-/* === Carousel Styling === */
-.carousel-inner {
-  height: 400px;
-}
-
-.carousel-inner img,
-.carousel-inner video {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  background-color: #f0f0f0;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: black;
-  border-radius: 50%;
-  padding: 10px;
-}
-
-/* === Highlighted Project Card === */
+/* Highlighted Final Project Card */
 .highlight-card .card {
-  border: 2px solid #68BBCD;
-  box-shadow: 0 0 20px rgba(104, 187, 205, 0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #ffffff;
+    border: 2px solid #68BBCD;
+    box-shadow: 0 0 20px rgba(104, 187, 205, 0.4);
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fdfdfd;
 }
 
 .highlight-card .card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 25px rgba(104, 187, 205, 0.6);
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(104, 187, 205, 0.6);
 }
 
 .highlight-card .card-title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #68BBCD;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #68BBCD;
 }
 
 .highlight-card .card-text {
-  font-size: 1.1rem;
+    font-size: 1.1rem;
 }
 
 .highlight-card .badge {
-  font-size: 0.85rem;
-  background-color: #198754;
-  color: white;
-  border-radius: 20px;
-  padding: 6px 12px;
+    font-size: 0.85rem;
+    background-color: #198754;
+    color: white;
+    border-radius: 20px;
+    padding: 6px 12px;
 }
 
-/* === Hero Project Section (Final Project) === */
-.hero-project {
-  background-color: #f8f9fa;
-  padding: 60px 20px;
-  max-width: 960px;
-  margin: 0 auto;
-  color: #101B1E;
-}
 
-.hero-project .card {
-  background-color: #ffffff;
-  border-radius: 20px;
-  overflow: hidden;
-}
 
-.hero-project .card-title {
-  color: #68BBCD;
-}
 
-.hero-project .card-text {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-.hero-project .carousel-inner img,
-.hero-project .carousel-inner video {
-  height: 360px;
-  object-fit: contain;
-  background-color: #f4f4f4;
-}
-
-.hero-project .btn-primary {
-  background-color: #68BBCD;
-  border: none;
-  border-radius: 30px;
-  padding: 10px 20px;
-  font-size: 1.1rem;
-}
-
-.hero-project .btn-primary:hover {
-  background-color: #7CE0F5;
-  color: #101B1E;
-}
-
-.hero-project .badge {
-  font-size: 1rem;
-  padding: 10px 16px;
-  border-radius: 30px;
-}
-
-/* === Talk To Me Section === */
-#talk-to-me {
-  background-color: #F4F4F4;
-}
-
-/* === Utilities === */
-.text-bg-dark {
-  background-color: #101B1E;
-  color: #68BBCD;
-}
-
-/* === End of styles.css === */
+/* End of styles.css */

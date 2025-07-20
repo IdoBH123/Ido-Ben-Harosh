@@ -154,6 +154,53 @@ body {
     border-radius: 20px;
     padding: 6px 12px;
 }
+.hero-project {
+  background-color: #101B1E;
+  padding: 60px 20px;
+  color: white;
+}
+
+.hero-project .card {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.hero-project .card-title {
+  color: #68BBCD;
+}
+
+.hero-project .card-text {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+.hero-project .carousel-inner img,
+.hero-project .carousel-inner video {
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero-project .btn-primary {
+  background-color: #68BBCD;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+}
+
+.hero-project .btn-primary:hover {
+  background-color: #7CE0F5;
+  color: #101B1E;
+}
+
+.hero-project .badge {
+  font-size: 1rem;
+  padding: 10px 16px;
+  border-radius: 30px;
+}
+
+
 
 
 /* End of styles.css */

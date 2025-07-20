@@ -1,167 +1,143 @@
+/* === Base Typography & Layout === */
 body {
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 400;
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  color: #101B1E;
 }
 
-.catchphrase {
-    color: #68BBCD;
-}
-
+.catchphrase,
 .bg-highlighted {
-    background-color: #68BBCD;
+  color: #68BBCD;
+  background-color: #68BBCD;
 }
 
+/* === Buttons === */
 .btn-primary {
-    background-color: #68BBCD;
-    border-color: #68BBCD;
-    color: #101B1E;
-    border-radius: 50px;
+  background-color: #68BBCD;
+  border-color: #68BBCD;
+  color: #101B1E;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #7CE0F5;
-    border-color: #7CE0F5;
-    color: #101B1E;
+  background-color: #7CE0F5;
+  border-color: #7CE0F5;
+  color: #101B1E;
 }
 
-.text-bg-dark {
-    background-color: #101B1E;
-    color: #68BBCD;
-}
-
+/* === Navbar & Footer === */
+.navbar,
+.bg-body-tertiary,
+.footer-jumbotron,
 .about-me {
-    background-color: #101B1E;
-}
-
-.bg-body-tertiary {
-    background-color: #101B1E !important;
-    color: white;
-}
-
-.skill {
-    background-color: #222F33;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding: 10px;
-    /* Padding around each skill block */
-    border-radius: 50px;
-    /* Optional: Rounded corners */
-    height: auto;
-    /* Adjusts height to content */
-    width: auto;
-    /* Adapts width to content */
-}
-
-.skill img {
-    margin-right: 10px;
-    /* Space between the image and the text */
-}
-
-.text-container h3 {
-    white-space: nowrap;
-    /* Prevents wrapping of text */
-    font-size: 1rem;
-    margin: 0;
-    /* Removes default margin */
-}
-
-.card img {
-    height: 200px;
-    /* Set a fixed height */
-    object-fit: cover;
-    /* Maintain aspect ratio while covering the area */
-}
-
-.card {
-    height: 100%;
-    /* Ensure cards have consistent height */
-}
-
-.carousel-inner {
-    height: 200px;
-    /* Match the image height for consistency */
-}
-
-#talk-to-me {
-    background-color: #F4F4F4;
-}
-
-.carousel-inner img {
-    height: 200px;
-    /* Set a fixed height */
-    object-fit: contain;
-    /* Maintain aspect ratio while covering the area */
-}
-
-.skill img {
-    width: 30px;
-    height: 30px;
-}
-
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 10px;
-}
-
-.footer-jumbotron {
-    background-color: #101B1E;
+  background-color: #101B1E !important;
+  color: white;
 }
 
 .footer a,
 .footer p {
-    color: white !important;
-    text-decoration: none;
+  color: white !important;
+  text-decoration: none;
 }
 
-.navbar {
-    background: #101B1E !important;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
+/* === Skill Badges === */
+.skill {
+  background-color: #222F33;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  border-radius: 50px;
+  width: auto;
+  height: auto;
 }
 
-/* Highlighted Final Project Card */
+.skill img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.text-container h3 {
+  white-space: nowrap;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+/* === Card Styling === */
+.card {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* === Carousel Styling === */
+.carousel-inner {
+  height: 400px;
+}
+
+.carousel-inner img,
+.carousel-inner video {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  background-color: #f0f0f0;
+}
+
+/* === Project Section: Highlighted Card === */
 .highlight-card .card {
-    border: 2px solid #68BBCD;
-    box-shadow: 0 0 20px rgba(104, 187, 205, 0.4);
-    transform: scale(1.02);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fdfdfd;
+  border: 2px solid #68BBCD;
+  box-shadow: 0 0 20px rgba(104, 187, 205, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
 }
 
 .highlight-card .card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 25px rgba(104, 187, 205, 0.6);
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(104, 187, 205, 0.6);
 }
 
 .highlight-card .card-title {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: #68BBCD;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #68BBCD;
 }
 
 .highlight-card .card-text {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .highlight-card .badge {
-    font-size: 0.85rem;
-    background-color: #198754;
-    color: white;
-    border-radius: 20px;
-    padding: 6px 12px;
-}
-.hero-project {
-  background-color: #101B1E;
-  padding: 60px 20px;
+  font-size: 0.85rem;
+  background-color: #198754;
   color: white;
+  border-radius: 20px;
+  padding: 6px 12px;
+}
+
+/* === Hero Project Section (Final Project) === */
+.hero-project {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  color: #101B1E;
 }
 
 .hero-project .card {
-  background-color: #1a1a1a;
+  background-color: #ffffff;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -172,13 +148,14 @@ body {
 
 .hero-project .card-text {
   font-size: 1.2rem;
-  color: #ddd;
+  color: #333;
 }
 
 .hero-project .carousel-inner img,
 .hero-project .carousel-inner video {
   height: 400px;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #f4f4f4;
 }
 
 .hero-project .btn-primary {
@@ -200,7 +177,15 @@ body {
   border-radius: 30px;
 }
 
+/* === Talk To Me Section === */
+#talk-to-me {
+  background-color: #F4F4F4;
+}
 
+/* === Utilities === */
+.text-bg-dark {
+  background-color: #101B1E;
+  color: #68BBCD;
+}
 
-
-/* End of styles.css */
+/* === End of styles.css === */
